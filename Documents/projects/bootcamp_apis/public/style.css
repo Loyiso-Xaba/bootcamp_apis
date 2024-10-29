@@ -1,0 +1,91 @@
+body {
+    background-color: #1c1c1c; /* Dark background for an urban feel */
+    color: #fff; /* White text for high contrast */
+    line-height: 1.6;
+    font-family: 'Arial Black', Arial, sans-serif; /* Bold and readable font */
+}
+
+.border {
+    padding: 1.5em;
+    margin: 2em auto;
+    border-radius: 0.3em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    border: 3px solid #ff0000; /* Thick red border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    max-width: 600px;
+}
+
+.border:hover {
+    transform: scale(1.05); /* Slightly larger on hover */
+    background-color: rgba(255, 0, 0, 0.5); /* Darker red on hover */
+}
+
+h1 {
+    font-size: 3em; /* Large, attention-grabbing heading */
+    color: #ff0000; /* Bright red for headlines */
+    margin-bottom: 0.5em;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.8); /* Strong shadow effect */
+}
+
+h2 {
+    font-size: 2em; /* Subheading size */
+    color: #fff; /* White for contrast */
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7); /* Shadow for depth */
+}
+
+.color-button {
+    cursor: pointer;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    border: 2px solid #ff0000; /* Bold red border */
+    border-radius: 5px;
+    padding: 0.5em;
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase for a bold statement */
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    font-family: 'Arial', sans-serif; /* More readable font */
+}
+
+.color-button:hover {
+    background-color: #ff0000; /* Red background on hover */
+    color: #fff; /* White text on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+.color-button:active {
+    transform: scale(0.95); /* Scale down on click */
+}
+
+.button {
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 1em 0;
+    width: calc(100% - 2em);
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    border: 2px solid #ff0000; /* Bold red border */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    transition: transform 0.1s ease, background-color 0.2s ease;
+    font-family: 'Arial', sans-serif; /* More readable font */
+}
+
+.button:hover {
+    background-color: #ff0000; /* Red on hover */
+    color: #fff; /* White text on hover */
+    transform: scale(1.05); /* Scale effect */
+}
+
+@media (max-width: 600px) {
+    .border {
+        padding: 1em;
+        margin: 1em;
+    }
+}
+
+@media (max-width: 300px) {
+    .button, .color-button {
+        width: calc(100% - 2em);
+        margin: 0.5em 0;
+    }
+}
